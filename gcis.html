@@ -1,0 +1,63 @@
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>test gcis</title>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/gcis.js"></script>
+
+        <!-- Styles -->
+        <style>
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 40px;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+
+            #feedback ul {
+                list-style-type:none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="content">
+                <div class="title m-b-md">
+                    經濟部商工行政資料開放平臺 API服務
+                </div>
+                <form role="form" method="post" id="frm_login">
+                    <fieldset>
+                        <div class="form-group">
+                            <label>請輸入商業統一編號 : </label>
+                            <input class="form-control required" placeholder="President_No" name="President_No" type="text" autofocus>
+                            <button type="button" name="query" class="btn btn-lg btn-success btn-block" value="query">查詢</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div id="feedback"></div>
+            </div>
+        </div>
+    </body>
+</html>
